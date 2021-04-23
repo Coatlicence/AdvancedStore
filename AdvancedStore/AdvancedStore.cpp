@@ -1,9 +1,13 @@
-// AdvancedStore.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "Store.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	cout << gStore << endl;
+
+	Store* store = Store::GetStore();
+
+	cout << store << endl;
 }
