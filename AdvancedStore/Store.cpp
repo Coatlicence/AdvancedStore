@@ -9,6 +9,17 @@ Store::Store()
 
 Store::~Store()
 {
+    map<string, vector<Product*>*>::iterator it;
+
+    for (it = ProductList.begin(); it != ProductList.end(); it++)
+    {
+        for (int i = 0; i < it->second->size(); i++)
+        {
+            delete it->second->at(i);
+        }
+
+        it->second->~vector();
+    }
 }
 
 Store* Store::GetStore()
@@ -21,7 +32,7 @@ Store* Store::GetStore()
     return StoreInstance;
 }
 
-map<string, vector<Product*>>* Store::GetProductList()
+map<string, vector<Product*>*>* Store::GetProductList()
 {
     return &ProductList;
 }

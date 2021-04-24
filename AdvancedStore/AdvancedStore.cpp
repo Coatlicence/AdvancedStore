@@ -16,19 +16,21 @@ int main()
 	Oco.MakeProduct("Chips", 40.f);
 	Oco.MakeProduct("Chips", 40.f);
 
-	map<string, vector<Product*>>* List = gStore->GetProductList();
+	map<string, vector<Product*>*>* List = gStore->GetProductList();
 
-	map<string, vector<Product*>>::iterator it;
+	map<string, vector<Product*>*>::iterator it;
 
+	int a;
+	
 	for (it = List->begin(); it != List->end(); it++)
 	{
 		cout << it->first << " ";
 
-		cout << it->second.size() << " ";
+		cout << it->second->size() << " ";
 
 		cout << "made by: ";
 
-		cout << it->second.back()->GetManufacturerName() << endl;
+		cout << (*(it->second->at(0))).GetManufacturerName() << endl;
 	}
 
 	cout << endl;
