@@ -1,8 +1,7 @@
 #include "Store.h"
 
-Store* gStore               = Store::GetStore();
 Store* Store::StoreInstance = nullptr;
-
+Store* gStore               = Store::GetStore();
 
 Store::Store()
 {
@@ -22,7 +21,7 @@ Store* Store::GetStore()
     return StoreInstance;
 }
 
-vector<Product*> Store::GetProductList()
+map<string, vector<Product*>>* Store::GetProductList()
 {
-    return ProductList;
+    return &ProductList;
 }

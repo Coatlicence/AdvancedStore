@@ -1,27 +1,36 @@
 #pragma once
 #include <string>
+#include <iostream>
 #include "Product.h"
 #include "Store.h"
 using namespace std;
 
 class Product;
 
-/// works with products
-class ProductManufacturer abstract
+class ProductManufacturer
 {
+private:
+	/// Works by ProductManufacturer::Name
+	void (*SetPrice)	(float Price,	string ProductName, string LicensorName);
+
+	void (*SetDiscount)	(float Discount,string ProductName, string LicensorName);
+
 public:
+	ProductManufacturer(string Name);
+
 	string Name;
 
-	virtual void SetPrice(float Price) = 0;
+	void MakeProduct(string Name, float Price);
 
-	virtual void SetDiscount(float Percent) = 0;
+	///--------------------------------------------------------------
+	// Setters
 
+	/*	To change method just type in argument a 
+	 *	non-namespace(declared outside of classes) 
+	 *	function without operator() 
+	 */
 
-};
+	void SetStrategySetPrice	(void (*SetPrice)(float Price, string ProductName, string LicensorName));
 
-/// creates products
-class ProductFactory abstract
-{
-public:
-	virtual void CreateProduct() = 0;
+	void SetStrategySetDiscount	(void (*SetDiscount)(float Discount, string ProductName, string LicensorName));
 };

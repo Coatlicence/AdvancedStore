@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <map>
 #include "Product.h"
 using namespace std;
 
@@ -16,15 +17,15 @@ private:
 
 	static Store* StoreInstance;
 
-	/// This vector stores all of game products and 
-	vector<Product*> ProductList;
+	/// This vector stores all of game products
+	map<string, vector<Product*>> ProductList;
 
 public:
 	void operator=(Store&) = delete;
 
 	static Store* GetStore();
 
-	vector<Product*> GetProductList();
+	map<string, vector<Product*>>* GetProductList();
 };
 
 extern Store* gStore;
