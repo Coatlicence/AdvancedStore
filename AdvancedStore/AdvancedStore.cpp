@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Store.h"
 #include "Product.h"
+#include <Player.h>
 
 using namespace std;
 
@@ -10,6 +11,15 @@ ProductManufacturer Oco = ProductManufacturer("Oco");
 
 int main()
 {
+	Player player;
+
+	while (player.Play)
+	{
+		player.InterfaceMenuOpen();
+
+		player.Input();
+	}
+	/*
 	Coc.MakeProduct("Coca-product", 101.f);
 	Coc.MakeProduct("Coca-product", 101.f);
 
@@ -22,16 +32,23 @@ int main()
 
 	int a;
 	
+	cout << "Name" << "\t\t" << "Price" << "\t\t" << "Licensor" << "\t\t" << "Count" << endl << endl;
+
 	for (it = List->begin(); it != List->end(); it++)
 	{
 		cout << it->first << " ";
 
 		cout << it->second->size() << " ";
 
-		cout << "made by: ";
+		cout << "\t\tmade by: ";
 
-		cout << (*(it->second->at(0))).GetManufacturerName() << endl;
+		cout << it->second->at(0)->GetManufacturerName() << endl;
 	}
 
 	cout << endl;
+	*/
+
+	//Player player;
+
+	//while ()
 }
