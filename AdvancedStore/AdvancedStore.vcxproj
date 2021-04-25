@@ -142,22 +142,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\GlobalVariableContainer.cpp" />
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\InterfaceChoose.cpp" />
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\Player.cpp" />
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\ProgrammInterface.cpp" />
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\UserRegisterInterface.cpp" />
     <ClCompile Include="AdvancedStore.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="ProductManufacturer.cpp" />
     <ClCompile Include="Store.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\GlobalVariableContainer.h" />
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\InterfaceChoose.h" />
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\Player.h" />
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\ProgrammInterface.h" />
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\UserRegisterInterface.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ProductManufacturer.h" />
     <ClInclude Include="Store.h" />

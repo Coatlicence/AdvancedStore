@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Interfaces">
-      <UniqueIdentifier>{60db38e0-df3f-4623-8cc7-9aa681045c51}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdvancedStore.cpp">
@@ -30,21 +27,6 @@
     <ClCompile Include="Store.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\ProgrammInterface.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\Player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\InterfaceChoose.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\GlobalVariableContainer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\UserRegisterInterface.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ProductManufacturer.h">
@@ -55,21 +37,6 @@
     </ClInclude>
     <ClInclude Include="Product.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\ProgrammInterface.h">
-      <Filter>Header Files\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\InterfaceChoose.h">
-      <Filter>Header Files\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\Player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\GlobalVariableContainer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GunBehaivorNodeSystem\GunBehaivorNodeSystem\UserRegisterInterface.h">
-      <Filter>Header Files\Interfaces</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
