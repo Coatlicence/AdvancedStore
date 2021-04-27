@@ -1,7 +1,5 @@
-
 #include "GlobalVariableContainer.h"
-#include "UserRegisterInterface.h"
-#include "InterfaceChoose.h"
+#include "MenuChooseInterface.h"
 
 GlobalVariableContainer::GlobalVariableContainer(vector<ProgrammInterface*> Interfaces)
 {
@@ -14,10 +12,10 @@ vector<ProgrammInterface*> GlobalVariableContainer::GetInterfaces()
 }
 
 // add your interface here
-vector<ProgrammInterface*> i = 
-{ 
-    new MenuChooseInterface(), 
-    new UserRegisterInterface()
+vector<ProgrammInterface*> i =
+{
+    new MenuChooseInterface(),
+
 };
 
 GlobalVariableContainer GlobalContainer = GlobalVariableContainer(i);

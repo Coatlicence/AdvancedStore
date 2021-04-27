@@ -25,8 +25,8 @@ bool Player::Input()
 	// end the game
 	if (Command == "x")
 	{
-		Play = false; 
-		
+		Play = false;
+
 		system("cls");
 		return true;
 	}
@@ -39,7 +39,7 @@ bool Player::Input()
 		system("cls");
 		return true;
 	}
-	
+
 	GetCurrentInterface()->InputProcess(this, Command);
 
 	return true;
@@ -65,7 +65,7 @@ void Player::InterfaceMenuOpen()
 
 
 
-void Player::SetMethodDictionary(map<string, void(*)()> &MethodDictionary)
+void Player::SetMethodDictionary(map<string, void(*)()>& MethodDictionary)
 {
 	this->MethodDictionary = &MethodDictionary;
 }

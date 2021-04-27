@@ -6,7 +6,7 @@ using namespace std;
 class ProgrammInterface;
 
 
-struct GlobalVariableContainer final 
+struct GlobalVariableContainer final
 {
 private:
 	vector<ProgrammInterface*> Interfaces;

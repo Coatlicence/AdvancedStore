@@ -14,7 +14,7 @@ class ProgrammInterface abstract
 {
 public:
 	map<string, void(*)()> MethodDictionary;
-	
+
 	string Name;
 
 private:
@@ -30,4 +30,4 @@ protected:
 	// system("cls");
 	void UpdateScreen();
 
-}; 
+};

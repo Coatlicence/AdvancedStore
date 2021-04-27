@@ -1,4 +1,4 @@
-#include "InterfaceChoose.h"
+#include "MenuChooseInterface.h"
 #include <iostream>
 
 MenuChooseInterface::MenuChooseInterface()// : ProgrammInterface::ProgrammInterface(GlobalContainer)

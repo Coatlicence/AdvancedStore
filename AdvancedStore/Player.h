@@ -36,7 +36,7 @@ public:
 	void InterfaceMenuOpen();
 
 	//// getters
-	
+
 	// get CurrentInterface
 	ProgrammInterface* GetCurrentInterface();
 
@@ -45,10 +45,10 @@ public:
 
 
 	//// setters
-	
+
 	// uses pointer of interface MethodDictionary
 	void SetMethodDictionary(map<string, void(*)()>& MethodDictionary);
 
 	// sets Current Interfaces, can`t move out of range
-	void SetCurrentInterface(int &IndexOfInterfaceOnInterfaces);
+	void SetCurrentInterface(int& IndexOfInterfaceOnInterfaces);
 };
