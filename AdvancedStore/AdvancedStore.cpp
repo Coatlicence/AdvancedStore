@@ -31,10 +31,6 @@ int main()
 	{
 		player.InterfaceMenuOpen();
 
-		//string R = "11";
-
-		//player.account.AddShoppingList(R);
-		
 		player.Input();
 	}
 }
