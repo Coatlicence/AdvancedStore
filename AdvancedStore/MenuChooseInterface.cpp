@@ -13,7 +13,7 @@ void MenuChooseInterface::PrintInfo()
 
 	cout << "Choose interface: \n\n";
 
-	vector<ProgrammInterface*> ArrayOfInterfaces = GlobalContainer.GetInterfaces();
+	vector<ProgrammInterface*> ArrayOfInterfaces = GlobalContainer->GetInterfaces();
 
 	for (int i = 1; i < ArrayOfInterfaces.size(); i++)
 	{

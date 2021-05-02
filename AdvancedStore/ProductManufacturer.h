@@ -11,9 +11,9 @@ class ProductManufacturer
 {
 private:
 	/// Works by ProductManufacturer::Name
-	void (*SetPrice)	(float Price,	string ProductName, string LicensorName);
+	void (*SetPrice)	(float Price, string LicensorName, string ProductName);
 
-	void (*SetDiscount)	(float Discount,string ProductName, string LicensorName);
+	void (*SetDiscount)	(float Discount, string LicensorName, string ProductName);
 
 public:
 	ProductManufacturer(string Name);
@@ -27,10 +27,18 @@ public:
 
 	/*	To change method just type in argument a 
 	 *	non-namespace(declared outside of classes) 
-	 *	function without operator() 
+	 *	function without operator() with given signature
 	 */
+	void SetStrategySetPrice	(void (*SetPrice)(float Price, string LicensorName, string ProductName));
 
-	void SetStrategySetPrice	(void (*SetPrice)(float Price, string ProductName, string LicensorName));
+	/*	To change method just type in argument a
+	 *	non-namespace(declared outside of classes)
+	 *	function without operator() with given signature
+	 */
+	void SetStrategySetDiscount	(void (*SetDiscount)(float Discount, string LicensorName, string ProductName));
 
-	void SetStrategySetDiscount	(void (*SetDiscount)(float Discount, string ProductName, string LicensorName));
+	void SetPriceToAllProducts(float Price);
+
+	void SetDiscountToAllProducts(float Discount);
+
 };

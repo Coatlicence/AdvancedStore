@@ -5,51 +5,36 @@
 
 using namespace std;
 
-ProductManufacturer Coc = ProductManufacturer("Coc");
-ProductManufacturer Oco = ProductManufacturer("Oco");
-
+ProductManufacturer oco = ProductManufacturer("oco");
+ProductManufacturer fff = ProductManufacturer("fff");
+ProductManufacturer rrr = ProductManufacturer("rrr");
+ProductManufacturer aaa = ProductManufacturer("aaa");
 
 int main()
 {
-	
 	Player player;
+	
+	oco.MakeProduct("oco", 100.f);
+	oco.MakeProduct("oco_1", 1100.f);
+
+	fff.MakeProduct("fff", 120.f);
+	fff.MakeProduct("fff", 1200.f);
+
+	rrr.MakeProduct("rrr", 130.f);
+	rrr.MakeProduct("rrr1", 1220.f);
+
+	aaa.MakeProduct("aaa", 140.f);
+	aaa.MakeProduct("aaa1", 1320.f);
+
 
 	while (player.Play)
 	{
 		player.InterfaceMenuOpen();
 
+		//string R = "11";
+
+		//player.account.AddShoppingList(R);
+		
 		player.Input();
 	}
-	/*
-	Coc.MakeProduct("Coca-product", 101.f);
-	Coc.MakeProduct("Coca-product", 101.f);
-
-	Oco.MakeProduct("Chips", 40.f);
-	Oco.MakeProduct("Chips", 40.f);
-
-	map<string, vector<Product*>*>* List = gStore->GetProductList();
-
-	map<string, vector<Product*>*>::iterator it;
-
-	int a;
-	
-	cout << "Name" << "\t\t" << "Price" << "\t\t" << "Licensor" << "\t\t" << "Count" << endl << endl;
-
-	for (it = List->begin(); it != List->end(); it++)
-	{
-		cout << it->first << " ";
-
-		cout << it->second->size() << " ";
-
-		cout << "\t\tmade by: ";
-
-		cout << it->second->at(0)->GetManufacturerName() << endl;
-	}
-
-	cout << endl;
-	*/
-
-	//Player player;
-
-	//while ()
 }

@@ -145,6 +145,7 @@
     <ClCompile Include="AdvancedStore.cpp" />
     <ClCompile Include="GlobalVariableContainer.cpp" />
     <ClCompile Include="MenuChooseInterface.cpp" />
+    <ClCompile Include="OnStoreInterface.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="ProductManufacturer.cpp" />
@@ -154,6 +155,7 @@
   <ItemGroup>
     <ClInclude Include="GlobalVariableContainer.h" />
     <ClInclude Include="MenuChooseInterface.h" />
+    <ClInclude Include="OnStoreInterface.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ProductManufacturer.h" />

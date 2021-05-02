@@ -18,14 +18,18 @@ private:
 	static Store* StoreInstance;
 
 	/// This vector stores all of game products
-	map<string, vector<Product*>*> ProductList;
+	map<string, vector<Product*>*> ProductStock;
 
 public:
 	void operator=(Store&) = delete;
 
 	static Store* GetStore();
 
-	map<string, vector<Product*>*>* GetProductList();
+	map<string, vector<Product*>*>* GetProductStock();
+
+	/// returns true if removed
+	bool RemoveProductFromStore(Product* product);
 };
 
 extern Store* gStore;
+

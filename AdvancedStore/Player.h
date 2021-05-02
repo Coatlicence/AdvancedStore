@@ -7,15 +7,44 @@
 
 #include "GlobalVariableContainer.h"
 #include "ProgrammInterface.h"
+#include "Product.h"
 using namespace std;
 
 struct GlobalVariableContainer;
 class ProgrammInterface;
 
+
 class Player final
 {
 public:
 	bool Play = true;
+
+	struct Account
+	{
+	public:
+		Account();
+
+		/// this is your money. Why its public? Because anyone can steal them
+		float Budget;
+
+		map<string, vector<Product*>*> ShoppingList;
+
+	private:
+		float MoneySpent;
+
+	public:
+		void CheckoutShoppingList();
+
+		void AddMoneySpent(float& MoneySpentToAdd);
+
+		float GetMoneySpent();
+
+		void AddShoppingList(Product* product);
+
+		map<string, vector<Product*>*>* GetShoppingList();
+	};
+
+	Account account;
 
 private:
 	int CurrentInterface = 0;
@@ -50,5 +79,6 @@ public:
 	void SetMethodDictionary(map<string, void(*)()>& MethodDictionary);
 
 	// sets Current Interfaces, can`t move out of range
-	void SetCurrentInterface(int& IndexOfInterfaceOnInterfaces);
+	void SetCurrentInterface(unsigned int IndexOfInterfaceOnInterfaces);
 };
+

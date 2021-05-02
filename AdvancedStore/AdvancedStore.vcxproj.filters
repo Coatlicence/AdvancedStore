@@ -48,6 +48,9 @@
     <ClCompile Include="ProgrammInterface.cpp">
       <Filter>Source Files\ModularProgramm</Filter>
     </ClCompile>
+    <ClCompile Include="OnStoreInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Store.h">
@@ -69,6 +72,9 @@
       <Filter>Header Files\Modular Program</Filter>
     </ClInclude>
     <ClInclude Include="MenuChooseInterface.h">
+      <Filter>Header Files\Modular Program\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="OnStoreInterface.h">
       <Filter>Header Files\Modular Program\Interfaces</Filter>
     </ClInclude>
   </ItemGroup>
