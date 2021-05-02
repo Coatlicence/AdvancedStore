@@ -1,20 +1,5 @@
 #include "Player.h"
 
-
-Player::~Player()
-{
-
-}
-
-
-
-Player::Player()
-{
-
-}
-
-
-
 bool Player::Input()
 {
 	string Command;
